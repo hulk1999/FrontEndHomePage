@@ -4,30 +4,10 @@
 
 <!-- HEAD BEGIN -->
 <head>
-    
-<title>Scrape - Creative Portfolio HTML Template</title>
 
-<style>
-    
-    body{
-        margin: 0;
-    }
-    
-    .header-img{
-        height: 100%;
-        width: 100%;
-        filter: brightness(50%);
-    }
-    
-    .header-intro{
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        color: white;
-        font-size: 5vw;
-    }
+    <title>Scrape - Creative Portfolio HTML Template</title>
 
-</style>
+    <link rel="stylesheet" type="text/css" href="css\header.css">
     
 </head>
 <!-- HEAD END -->
@@ -35,14 +15,25 @@
 <!-- BODY BEGIN -->
 <body>
 
-<div>
-    <img class="header-img" src="source\bg-01.jpg" alt="city">
-    <div class="header-intro">We Are</div>
-    <slider>
-        <slide><p>Hulk1</p></slide>
-        <slide><p>Hulk2</p></slide>
-    </slider>
+<div class="header">
+    <img class="header-img" src="source\bg-01.jpg">
+    <img class="header-img" src="source\bg-02.jpg">
+    <img class="header-img" src="source\bg-03.jpg">
+
+    <div class="header-intro">
+        <b>We Are</b>
+        <div class="changing-text">Design</div><div class="changing-text">Creative</div><div class="changing-text">Architecture</div>
+        <br>
+        <b>Studio</b>
+    </div>
+
+    <div id="check-it-block">
+        <div id="transparent-circle"></div>
+        <div id="check-it">Check It</div>
+    </div>
 </div>
+
+<h1>What We Do</h1>
 
 </body>
 <!-- BODY END-->
