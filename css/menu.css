@@ -1,0 +1,45 @@
+.menu-background{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	opacity: 0.9;
+	z-index: 5;
+}
+
+.logo{
+	position: fixed;
+	top: 35px;
+	left: 8%;
+	z-index: 10;
+}
+
+.menu{
+ 	overflow: hidden;
+	position: fixed;
+	top: 35px;
+	right: 120px;
+	width: 100%;
+	z-index: 9;
+}
+
+.menu a{
+	float: right;
+	display: block;
+	color: rgb(180, 180, 180);
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+@keyframes menu-hover{
+	0% {color: rgb(180, 180, 180);}
+	0.5% {color: rgb(240, 240, 240);}
+}
+
+.menu a:hover{
+	animation-name: menu-hover;
+	animation-duration: 100s;
+}
