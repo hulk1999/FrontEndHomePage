@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 @keyframes blurout{
@@ -77,8 +78,8 @@ body{
     filter: brightness(50%);
     position: absolute;
     opacity: 0;
-    overflow: hidden;
     clip: rect(0px, 100vw, 100vh, 0px);
+    overflow: hidden;
     animation-name: blur-in-out;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -210,6 +211,7 @@ body{
 
 #decoration1{
     position: absolute;
+    overflow: hidden;
     width: 100%;
     bottom: 0px;
 }
