@@ -1,0 +1,29 @@
+h1{
+	display: block;
+	font-size: 35px;
+	padding: 70px 0 70px 8%;
+	color: rgb(60, 60, 60);
+}
+
+.what-we-do .column{
+	float: left;
+    width: 28%;
+    padding: 1%;
+}
+
+.what-we-do .column:first-of-type{
+	padding-left: 8%;
+}
+
+.what-we-do .tittle{
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(60, 60, 60);
+	padding: 20px 0 20px 0;
+}
+
+.what-we-do p{
+	font-size: 16px;
+	font-family: Poppins-light;
+	color: rgb(140, 140, 140);
+}

@@ -1,0 +1,35 @@
+.about-us{
+	position: relative;
+	width: 83%;
+	height: 60vh;
+	left: 8%;
+	border
+}
+
+.about-us p{
+	width: 56%;
+	font-size: 15px;
+	line-height: 27px;
+	font-family: Poppins-light;
+	color: rgb(140, 140, 140);
+}
+
+.about-us .content-img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	border-radius: 3px;
+}
+
+.contact-us-button{
+	position: absolute;
+	bottom: 30%;
+	color: rgb(60, 60, 60);
+	width: 120px;
+	padding: 13px 0;
+	text-align: center;
+	margin: auto;
+	box-shadow: 0px 0px 10px rgb(200, 200, 200);
+	transition: all 0.5s;
+}

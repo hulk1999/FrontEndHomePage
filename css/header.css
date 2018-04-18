@@ -1,9 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
 @keyframes blurout{
     0% {opacity: 0; width: 100vw; height: 100vw;}
     0.0001% {opacity: 1;}
@@ -61,7 +55,7 @@ body{
 }
 
 .header{
-    display: block;
+    position: relative;
     height: 100vh;
 }
 
@@ -95,17 +89,15 @@ body{
 
 .header-intro{
     position: absolute;
-    font-family: Arial;
-    font-size: 4.5vw;
+    font-size: 4.3vw;
     color: white;
-    top: 36%;
+    top: 33%;
     left: 8%;
 }
 
 .header-intro-subcover-animation{
     position: absolute;
-    font-family: Arial;
-    font-size: 4.5vw;
+    font-size: 4.3vw;
     color: white;
     top: 36%;
     left: 8%;
@@ -113,10 +105,10 @@ body{
 }
 
 @keyframes subcover-animation{
-    0% {font-size: 0; padding: 4.5vw 0 0 0;}
-    30% {font-size: 4.5vw; padding: 0; transform: rotate(0deg);}
-    70% {font-size: 4.5vw; padding: 0; transform: rotate(180deg);}
-    100% {font-size: 0vw; padding: 4.5vw 0 0 0; transform: rotate(180deg);}
+    0% {font-size: 0; padding: 4.3vw 0 0 0;}
+    30% {font-size: 4.3vw; padding: 0; transform: rotate(0deg);}
+    70% {font-size: 4.3vw; padding: 0; transform: rotate(180deg);}
+    100% {font-size: 0vw; padding: 4.3vw 0 0 0; transform: rotate(180deg);}
 }
 
 .header-intro-subcover-animation b{
@@ -132,12 +124,12 @@ body{
 
 @keyframes appear{
     0% {font-size: 0;}
-    0.0001% {font-size: 4.5vw;}
+    0.0001% {font-size: 4.3vw;}
     1% {font-size: 3.3vw;}
-    2% {font-size: 4.5vw;}
+    2% {font-size: 4.3vw;}
     3% {font-size: 4.1vw;}
-    5% {font-size: 4.5vw;}
-    33.3% {font-size: 4.5vw;}
+    5% {font-size: 4.3vw;}
+    33.3% {font-size: 4.3vw;}
     33.3001% {font-size: 0;}
 }
 
@@ -159,17 +151,17 @@ body{
     animation-delay: 10s;
 }
 
-#check-it-block{
+.check-it-block{
     height: 50px;
     width: 200px;
     line-height: 50px;
     position: absolute;
     display: block;
-    top: 63%;
+    top: 65%;
     left: 8%;
 }
 
-#transparent-circle{
+.transparent-circle{
     position: absolute;
     height: 50px;
     width: 50px;
@@ -186,9 +178,8 @@ body{
     37% {top: 0px;}
 }
 
-#arrow{
+.arrow{
     position: absolute;
-    font-family: Calibri;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -196,22 +187,14 @@ body{
     top: 0px;
     transform: rotate(90deg);
     animation-name: fly;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-#check-it{
+.check-it-text{
     position: absolute;
-    font-family: Arial;
-    font-size: 27px;
+    font-size: 23px;
     font-weight: bold;
     color: white;
     left: 60px;
-}
-
-#decoration1{
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    bottom: 0px;
 }

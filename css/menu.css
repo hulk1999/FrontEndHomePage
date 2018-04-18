@@ -30,17 +30,11 @@
 	text-align: center;
 	padding: 10px;
 	text-decoration: none;
-	font-family: Arial;
 	font-weight: bold;
 	font-size: 13px;
-}
-
-@keyframes menu-hover{
-	0% {color: rgb(180, 180, 180);}
-	0.5% {color: rgb(240, 240, 240);}
+	transition: all 0.5s;
 }
 
 .menu a:hover{
-	animation-name: menu-hover;
-	animation-duration: 100s;
+	color: rgb(240, 240, 240);
 }
