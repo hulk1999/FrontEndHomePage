@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css\about-us.css">
     <link rel="stylesheet" type="text/css" href="css\the-team.css">
     <link rel="stylesheet" type="text/css" href="css\blog.css">
+    <link rel="stylesheet" type="text/css" href="css\footer.css">
     
 </head>
 <!-- HEAD END -->
@@ -26,6 +27,18 @@
 <!-- <div class="cover-animation"></div>
 <div class="loading-bar-background"></div>
 <div class="loading-bar"></div> -->
+
+<img class="menu-background" src="source\menu-decoration.png">
+<a href="#"><img class="logo" src="source\logo.png"></a>
+<div class="menu">
+    <a href="#">CONTACT</a>
+    <a href="#">BLOG</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">THE TEAM</a>
+    <a href="#">OUR WORKS</a>
+    <a href="#">WHAT WE DO</a>
+    <a href="#">HOME</a>
+</div>
 
 <div class="header">
     <img class="header-img" src="source\bg-01.jpg">
@@ -48,7 +61,7 @@
 
     <a href="#">
     <div class="check-it-block">
-        <div class="arrow">></div>
+        <div class="arrow"><i class="fas fa-angle-down"></i></div>
         <div class="transparent-circle"></div>
         <div class="check-it-text">Check It</div>
     </div>
@@ -79,7 +92,7 @@
 <h1>Our Works</h1>
 <div class="our-works">
 	<div class="container">
-        <a href="#"><img class="content-img" src="source\img-01.jpg"></a>
+        <a href="#0" onclick="popupVideo()"><img class="content-img" src="source\img-01.jpg"></a>
         <i class="fas fa-play-circle"></i>
         <div class="text1">Interior Design</div>
         <div class="text2">Bathroom<br>Refresh</div>
@@ -113,6 +126,8 @@
     <img class="decoration-bottom" src="source\decoration.png">
 </div>
 <a href="#" class="load-more-link"><div class="load-more-button">Load More</div></a>
+<div id="popup-background" onclick="closePopupVideo()"></div>
+<iframe id="popup-video" src="https://www.youtube.com/embed/eyFP5s403jY?rel=0&autoplay=0;start=107" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <h1>About Us</h1>
 <div class="about-us">
@@ -236,32 +251,45 @@
     </a>
 </div>
 
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-<p>Content</p>
-
-<img class="menu-background" src="source\menu-decoration.png">
-<a href="#"><img class="logo" src="source\logo.png"></a>
-<div class="menu">
-    <a href="#">CONTACT</a>
-    <a href="#">BLOG</a>
-    <a href="#">ABOUT US</a>
-    <a href="#">THE TEAM</a>
-    <a href="#">OUR WORKS</a>
-    <a href="#">WHAT WE DO</a>
-    <a href="#">HOME</a>
+<div class="footer">
+    <div class="background background--particles">
+        <canvas class="pg-canvas" width="1349" height="751" style="display: block;"></canvas>
+    </div>
+    <h1>Contact</h1>
+    <div class="our-address">
+        <div class="tittle">Our Address</div>
+        <div class="content">
+            3869 Shearwood Forest Drive<br>
+            Glendale, NH 03246<br>
+            United States
+        </div>
+        <a href="#"><i class="fas fa-envelope"></i><span>hello@example.com</span></a><br>
+        <a href="#"><i class="fab fa-facebook-f"></i><span><pre> </pre>we.are.scrape</span></a><br>
+        <a href="#"><i class="fab fa-twitter"></i><span>scrape.agency</span></a>
+    </div>
+    <form class="contact-form">
+        <div class="tittle">Contact Form</div>
+        <div class="column" id="first-column">
+            <div class="input-guide">Your Name</div>
+            <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="column">
+            <div class="input-guide">Your Email</div>
+            <input type="text" name="email" placeholder="Your Email">
+        </div>
+        <div class="input-guide">Your Message</div>
+        <textarea name="message" rows="8" placeholder="Your Message"></textarea><br>
+        <input type="submit" value="Send A Message">
+    </form>
+    <hr>
+    <img class="decoration-top" src="source\decoration.png">
+    <div class="copyright">(C) Copyright 2017, All Rights Reserved</div>
 </div>
+
+<script src="./js/myScript.js"></script>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/jquery.particleground.min.js"></script>
+<script src="./js/custom.js"></script>
 
 </body>
 <!-- BODY END-->

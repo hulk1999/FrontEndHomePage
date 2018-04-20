@@ -91,3 +91,21 @@ h1:nth-of-type(2){
 .load-more-button:active{
 	background-color: rgb(0, 98, 204);
 }
+
+#popup-background{
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0; bottom: 0; left: 0; right: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 30;
+}
+
+#popup-video{
+	position: fixed;
+	width: 60vw;
+	height: 33.75vw;
+	top: 100px;
+	left: 20vw;
+	z-index: 31;
+	visibility: hidden;
+}

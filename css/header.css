@@ -68,7 +68,6 @@
 
 .header-img{
     width: 100%;
-    min-width: 1000px;
     filter: brightness(50%);
     position: absolute;
     opacity: 0;
@@ -180,12 +179,11 @@
 
 .arrow{
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
-    left: 19px;
+    left: 17px;
     top: 0px;
-    transform: rotate(90deg);
     animation-name: fly;
     animation-duration: 2s;
     animation-iteration-count: infinite;
