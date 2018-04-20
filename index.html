@@ -24,23 +24,23 @@
 <!-- BODY BEGIN -->
 <body>
 
-<!-- <div class="cover-animation"></div>
+<div class="cover-animation"></div>
 <div class="loading-bar-background"></div>
-<div class="loading-bar"></div> -->
+<div class="loading-bar"></div>
 
 <img class="menu-background" src="source\menu-decoration.png">
 <a href="#"><img class="logo" src="source\logo.png"></a>
 <div class="menu">
-    <a href="#">CONTACT</a>
-    <a href="#">BLOG</a>
-    <a href="#">ABOUT US</a>
-    <a href="#">THE TEAM</a>
-    <a href="#">OUR WORKS</a>
-    <a href="#">WHAT WE DO</a>
-    <a href="#">HOME</a>
+    <a href="#id-contact" class="menu-link">CONTACT</a> 
+    <a href="#id-blog" class="menu-link">BLOG</a>
+    <a href="#id-about-us" class="menu-link">ABOUT US</a>
+    <a href="#id-the-team" class="menu-link">THE TEAM</a>
+    <a href="#id-our-works" class="menu-link">OUR WORKS</a>
+    <a href="#id-what-we-do" class="menu-link">WHAT WE DO</a>
+    <a href="#id-home" class="menu-link">HOME</a>
 </div>
 
-<div class="header">
+<div id="id-home" class="header">
     <img class="header-img" src="source\bg-01.jpg">
     <img class="header-img" src="source\bg-02.jpg">
     <img class="header-img" src="source\bg-03.jpg">
@@ -70,7 +70,7 @@
     <img class="decoration-bottom" src="source\decoration.png">
 </div>
 
-<h1>What We Do</h1>
+<h1 id="id-what-we-do">What We Do</h1>
 <div class="what-we-do">
 	<div class="column">
 		<img src="source\icon-screen.png">
@@ -89,7 +89,7 @@
 	</div>
 </div>
 
-<h1>Our Works</h1>
+<h1 id="id-our-works">Our Works</h1>
 <div class="our-works">
 	<div class="container">
         <a href="#0" onclick="popupVideo()"><img class="content-img" src="source\img-01.jpg"></a>
@@ -98,27 +98,27 @@
         <div class="text2">Bathroom<br>Refresh</div>
     </div>
 	<div class="container">
-        <a href="#"><img class="content-img" src="source\img-02.jpg"></a>
+        <a href="#0" onclick="popupSlide(2)"><img class="content-img" src="source\img-02.jpg"></a>
         <div class="text1">Architecture</div>
         <div class="text2">Hills Apartment</div>
     </div>
 	<div class="container">
-        <a href="#"><img class="content-img" src="source\img-03.jpg"></a>
+        <a href="#0" onclick="popupSlide(3)"><img class="content-img" src="source\img-03.jpg"></a>
         <div class="text1">Branding</div>
         <div class="text2">Story Restaurant</div>
     </div>
 	<div class="container">
-        <a href="#"><img class="content-img" src="source\img-04.jpg"></a>
+        <a href="#0" onclick="popupSlide(4)"><img class="content-img" src="source\img-04.jpg"></a>
         <div class="text1">Industrial Design</div>
         <div class="text2">Room Furniture</div>
     </div>
 	<div class="container">
-        <a href="#"><img class="content-img" src="source\img-05.jpg"></a>
+        <a href="#0" onclick="popupSlide(5)"><img class="content-img" src="source\img-05.jpg"></a>
         <div class="text1">Branding</div>
         <div class="text2">Maracana Cups</div>
     </div>
 	<div class="container">
-        <a href="#"><img class="content-img" src="source\img-06.jpg"></a>
+        <a href="#0" onclick="popupSlide(6)"><img class="content-img" src="source\img-06.jpg"></a>
         <div class="text1">Art</div>
         <div class="text2">Timeless Motion</div>
     </div>
@@ -126,10 +126,20 @@
     <img class="decoration-bottom" src="source\decoration.png">
 </div>
 <a href="#" class="load-more-link"><div class="load-more-button">Load More</div></a>
-<div id="popup-background" onclick="closePopupVideo()"></div>
+
+<div id="popup-background" onclick="closePopupVideo(); closePopupSlide();"></div>
 <iframe id="popup-video" src="https://www.youtube.com/embed/eyFP5s403jY?rel=0&autoplay=0;start=107" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<h1>About Us</h1>
+<img class="popup-img" src="source\img-01.jpg">
+<img class="popup-img" src="source\img-02.jpg">
+<img class="popup-img" src="source\img-03.jpg">
+<img class="popup-img" src="source\img-04.jpg">
+<img class="popup-img" src="source\img-05.jpg">
+<img class="popup-img" src="source\img-06.jpg">
+<i class="fas fa-caret-right" onclick="showNextImg(1)"></i>
+<i class="fas fa-caret-left" onclick="showNextImg(-1)"></i>
+
+<h1 id="id-about-us">About Us</h1>
 <div class="about-us">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id arcu iaculis, rutrum nunc ac, pellentesque risus. Vivamus hendrerit ligula nisl, at venenatis mi cursus et. Sed vitae ante quis tellus iaculis placerat quis nec urna. Morbi eget metus in odio cursus faucibus. Praesent metus diam, finibus eget turpis in, cursus accumsan eros. Morbi euismod metus arcu, quis venenatis massa ultrices eu. In sagittis consequat lectus ac venenatis. Praesent in ipsum ut libero lacinia eleifend. Nunc vitae porttitor ante, ut vehicula velit. In varius massa ut scelerisque commodo.</p>
     <img class="content-img" src="source\img-07.jpg">
@@ -138,7 +148,7 @@
 
 <div class="the-team">
     <img class="filter" src="source\filter.png">
-    <h1>The Team</h1>
+    <h1 id="id-the-team">The Team</h1>
     <div class="member-list">
         <div class="member">
             <div class="name">Jane Doe</div>
@@ -205,7 +215,7 @@
     <img class="decoration-bottom" src="source\decoration.png">
 </div>
 
-<h1>Blog</h1>
+<h1 id="id-blog">Blog</h1>
 <div class="blog">
     <a href="#">
     <div class="column">
@@ -255,7 +265,7 @@
     <div class="background background--particles">
         <canvas class="pg-canvas" width="1349" height="751" style="display: block;"></canvas>
     </div>
-    <h1>Contact</h1>
+    <h1 id="id-contact">Contact</h1>
     <div class="our-address">
         <div class="tittle">Our Address</div>
         <div class="content">
