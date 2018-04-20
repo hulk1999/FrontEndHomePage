@@ -36,6 +36,10 @@
 	transition: all 0.5s;
 }
 
+.menu a:nth-of-type(7){
+	color: white;
+}
+
 .menu a:hover{
 	color: rgb(240, 240, 240);
 }

@@ -1,11 +1,26 @@
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+		height: '390',
+		width: '640',
+		videoId: 'eyFP5s403jY',
+	});
+}
+
 function popupVideo(){
 	document.getElementById('popup-background').style.visibility = 'visible';
-	document.getElementById('popup-video').style.visibility = 'visible';
+	document.getElementById('player').style.visibility = 'visible';
+	player.playVideo();
 }
 
 function closePopupVideo(){
 	document.getElementById('popup-background').style.visibility = 'hidden';
-	document.getElementById('popup-video').style.visibility = 'hidden';
+	document.getElementById('player').style.visibility = 'hidden';
+	player.stopVideo();
 }
 
 var index;
@@ -22,13 +37,16 @@ function popupSlide(clickIndex){
 	index = clickIndex;
 	document.getElementById('popup-background').style.visibility = 'visible';
 	document.getElementsByClassName('popup-img')[index-1].style.visibility = 'visible';
+	document.getElementsByClassName('img-index')[0].style.visibility = 'visible';
 	document.getElementsByClassName('fa-caret-right')[0].style.visibility = 'visible';
 	document.getElementsByClassName('fa-caret-left')[0].style.visibility = 'visible';
+	document.getElementById('img-index-count').innerHTML = index;
 }
 
 function closePopupSlide(){
 	document.getElementById('popup-background').style.visibility = 'hidden';
 	document.getElementsByClassName('popup-img')[index-1].style.visibility = 'hidden';
+	document.getElementsByClassName('img-index')[0].style.visibility = 'hidden';
 	document.getElementsByClassName('fa-caret-right')[0].style.visibility = 'hidden';
 	document.getElementsByClassName('fa-caret-left')[0].style.visibility = 'hidden';
 }

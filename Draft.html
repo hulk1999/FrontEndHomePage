@@ -2,20 +2,24 @@
 <html>
 
 <head>
-<style type="text/css">
-
-/*body{
-	background-color: black;
-}*/
-
+<style>
+#player{
+	position: fixed;
+	width: 60vw;
+	height: 33.75vw;
+	top: 100px;
+	left: 20vw;
+	z-index: 31;
+	visibility: visible;
+}
 </style>
 </head>
 
-<body> 
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"</div>
 
-<canvas class="pg-canvas" width="532" height="1143" style="display: block;color:white;">Hulk</canvas>
-
-<script src="js\footerBackground.js"></script>
-
-</body>
+    <script src="./js/myScript.js">
+    </script>
+  </body>
 </html>

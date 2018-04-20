@@ -98,7 +98,7 @@
 	z-index: 30;
 }
 
-#popup-video{
+#player{
 	position: fixed;
 	width: 60vw;
 	height: 33.75vw;
@@ -112,6 +112,16 @@
 	position: fixed;
 	height: 80vh;
 	top: 10vh;
+	left: 50%;
+    transform: translate(-50%, 0);
+	z-index: 31;
+	visibility: hidden;
+}
+
+.img-index{
+	color: rgb(220, 220, 220);
+	position: fixed;
+	bottom: 5%;
 	left: 50%;
     transform: translate(-50%, 0);
 	z-index: 31;
