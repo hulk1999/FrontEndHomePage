@@ -1,5 +1,5 @@
 .footer{
-	height: 750px;
+	height: 800px;
 	overflow: hidden;
 	background-color: black;
 	position: relative;
@@ -8,18 +8,17 @@
 .background{
 	position: absolute;
 	overflow: hidden;
-	height: 750px;
+	height: 800px;
 }
 
 .footer h1{
 	color: white;
-	margin-bottom: 450px;
 }
 
 .our-address{
-	position: absolute;
-	top: 180px;
-	left: 8%;
+	float: left;
+	margin-left: 8%;
+	width: 20%;
 }
 
 .our-address .tittle{
@@ -50,10 +49,9 @@
 }
 
 form{
-	position: absolute;
-	top: 180px;
-	right: 12%;
 	width: 45%;
+	float: left;
+	margin: 0 12% 40px 15%;
 }
 
 .contact-form .tittle{
