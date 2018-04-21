@@ -29,6 +29,7 @@
 }
 
 .blog .tittle{
+	position: relative;
 	font-size: 19px;
 	font-weight: bold;
 	color: black;

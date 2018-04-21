@@ -1,105 +1,30 @@
-<!DOCTYPE html>
-
-<html>
-
-<!-- HEAD BEGIN -->
+<!doctype html>
+<html lang="en">
 <head>
-
-<title>Scrape - Creative Portfolio HTML Template</title>
-
-<style>
-    
-	body{
-        margin: 0;
-    }
-
-    @keyframes blurinout{
-    	0% {opacity: 0;}
-    	6.7% {opacity: 1;}
-    	33.3% {opacity: 1;}
-    	40% {opacity: 0;}
-	}
-
-	.header-img{
-        width: 100%;
-        height: 100%;
-        filter: brightness(50%);
-    	position: absolute;
-    	opacity: 0;
-    	animation-name: blurinout;
-    	animation-duration: 15s;
-    	animation-iteration-count: infinite;
-    }
-
-    .header-img:nth-child(2){
-    	animation-delay: 5s;
-    }
-
-    .header-img:nth-child(3){
-    	animation-delay: 10s;
-    }
-
-    .header-intro{
-    	position: absolute;
-    	font-family: Arial;
-    	font-size: 5vw;
-    	color: white;
-    	top: 36%;
-    	left: 8%;
-    }
-
-    @keyframes appear{
-    	0% {opacity: 0; font-size: 5vw; size: 100%;}
-    	6.7% {opacity: 1;}
-    	33.3% {opacity: 1;}
-    	40% {opacity: 0; font-size: 5vw; size: 100%;}
-    	40.0001% {font-size: 0px; size: 0px;}
-    }
-
-    .changing-text{
-    	size: 0px;
-    	padding: 0px;
-    	font-size: 0px;
-    	display: inline;
-    	font-weight: bold;
-    	text-decoration: underline;
-    	animation-name: appear;
-    	animation-duration: 15s;
-    	animation-iteration-count: infinite;
-    }
-
-    .changing-text:nth-child(2){
-    	animation-delay: 5s;
-    }
-
-    .changing-text:nth-child(3){
-    	animation-delay: 10s;
-    }
-
-</style>
-    
+  <meta charset="utf-8">
+  <title>offset demo</title>
+  <style>
+  p {
+    margin-left: 10px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<!-- HEAD END -->
-
-<!-- BODY BEGIN -->
 <body>
-
-<div class="slideshow">
-	<img class="header-img" src="source\bg-01.jpg">
-	<img class="header-img" src="source\bg-02.jpg">
-	<img class="header-img" src="source\bg-03.jpg">
-</div>
-
-<div class="header-intro">
-	<b>We Are</b>
-	<div class="changing-text">Design</div>
-	<div class="changing-text">Creative</div>
-	<div class="changing-text">Architecture</div>
-	<br>
-	<b>Studio</b>
-</div>
-
+ 
+<p>Hello</p>
+<p>Hello</p>
+<p>Hello</p>
+<p>Hello</p>
+<p>Hello</p>
+<p id="hulk">Hello</p>
+<p>2nd Paragraph</p>
+ 
+<script>
+var p = $( "#hulk" );
+var offset = p.offset();
+p.html( "left: " + offset.left + ", top: " + document.getElementById('hulk').offset().top );
+</script>
+ 
 </body>
-<!-- BODY END-->
-    
 </html>

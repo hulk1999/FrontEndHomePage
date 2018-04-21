@@ -51,6 +51,13 @@ function closePopupSlide(){
 	document.getElementsByClassName('fa-caret-left')[0].style.visibility = 'hidden';
 }
 
+function getOffset(el){
+	el = el.getBoundingClientRect();
+	return {
+    	left: el.left + window.scrollX,
+    	top: el.top + window.scrollY
+  	}
+}
 
 var activePart = 7;
 window.onscroll = function(){
@@ -69,4 +76,10 @@ window.onscroll = function(){
 		document.getElementsByClassName('menu-link')[tmpActivePart-1].style.color = 'white';
 		activePart = tmpActivePart;
 	}
+
+	var i;
+    for (i=1; i<=30; i++){
+    if (getOffset(document.getElementsByClassName('reveal-animation')[i-1]).top < window.pageYOffset + screen.height - 200)
+        document.getElementsByClassName('reveal-animation')[i-1].classList.add('in');
+    }
 }

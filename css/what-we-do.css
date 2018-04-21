@@ -1,7 +1,9 @@
 h1{
 	display: block;
+	position: relative;
 	font-size: 35px;
-	padding: 90px 0 70px 8%;
+	margin: 90px 0 70px 8%;
+	width: 20%;
 	color: rgb(60, 60, 60);
 }
 
@@ -20,10 +22,11 @@ h1{
 }
 
 .what-we-do .tittle{
+	position: relative;
 	font-size: 20px;
 	font-weight: bold;
 	color: rgb(60, 60, 60);
-	padding: 20px 0 20px 0;
+	margin: 20px 0 20px 0;
 }
 
 .what-we-do p{
