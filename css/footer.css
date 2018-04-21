@@ -9,6 +9,7 @@
 	position: absolute;
 	overflow: hidden;
 	height: 800px;
+	z-index: 0;
 }
 
 .footer h1{
@@ -49,9 +50,12 @@
 }
 
 form{
+	display: block;
+	position: relative;
 	width: 45%;
 	float: left;
 	margin: 0 12% 40px 15%;
+	z-index: 10;
 }
 
 .contact-form .tittle{
