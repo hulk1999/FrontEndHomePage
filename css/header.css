@@ -169,12 +169,12 @@
 }
 
 @keyframes fly{
-    0% {top: 0px;}
-    8% {top: -4px; opacity: 1}
-    15% {top: 30px; opacity: 0}
-    22% {top: -30px; opacity: 0}
-    29% {top: 4px; opacity: 1}
-    37% {top: 0px;}
+    0% {top: 2px;}
+    8% {top: -2px; opacity: 1}
+    15% {top: 32px; opacity: 0}
+    22% {top: -28px; opacity: 0}
+    29% {top: 6px; opacity: 1}
+    37% {top: 2px;}
 }
 
 .arrow{
@@ -183,7 +183,7 @@
     font-weight: bold;
     color: white;
     left: 17px;
-    top: 0px;
+    top: 2px;
     animation-name: fly;
     animation-duration: 2s;
     animation-iteration-count: infinite;

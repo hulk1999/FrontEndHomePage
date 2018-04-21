@@ -33,3 +33,7 @@
 	box-shadow: 0px 0px 10px rgb(200, 200, 200);
 	transition: all 0.5s;
 }
+
+.contact-us-button:hover{
+	box-shadow: 0px 0px 20px rgb(200, 200, 200);
+}
