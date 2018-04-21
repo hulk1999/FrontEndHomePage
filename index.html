@@ -24,10 +24,12 @@
 <!-- BODY BEGIN -->
 <body>
 
+<!-- loading page animation -->
 <div class="cover-animation"></div>
 <div class="loading-bar-background"></div>
 <div class="loading-bar"></div>
 
+<!-- menu / navigation bar -->
 <img class="menu-background" src="./source/menu-decoration.png">
 <a href="#"><img class="logo" src="./source/logo.png"></a>
 <div class="menu">
@@ -40,11 +42,14 @@
     <a href="#home-section" class="menu-link">HOME</a>
 </div>
 
+<!-- header section -->
 <div id="home-section" class="header">
+    <!-- background changing images -->
     <img class="header-img" src="./source/bg-01.jpg">
     <img class="header-img" src="./source/bg-02.jpg">
     <img class="header-img" src="./source/bg-03.jpg">
 
+    <!-- header introduction -->
     <div class="header-intro">
         <b>We Are</b>
         <a href="#" style="color: white;"><div class="changing-text">Design</div><div class="changing-text">Creative</div><div class="changing-text">Architecture</div></a>
@@ -59,6 +64,7 @@
         <b>Studio</b>
     </div>
 
+    <!-- check it button -->
     <a href="#what-we-do-section">
     <div class="check-it-block">
         <div class="arrow"><i class="fas fa-angle-down"></i></div>
@@ -67,9 +73,11 @@
     </div>
     </a>
 
+    <!-- decoration -->
     <img class="decoration-bottom" src="./source/decoration.png">
 </div>
 
+<!-- what we do section -->
 <h1 id="what-we-do-section" class="reveal-animation">What We Do</h1>
 <div class="what-we-do">
 	<div class="column">
@@ -89,6 +97,7 @@
 	</div>
 </div>
 
+<!-- our works section -->
 <h1 id="our-works-section" class="reveal-animation">Our Works</h1>
 <div class="our-works">
 	<div class="container">
@@ -122,11 +131,13 @@
         <div class="text1">Art</div>
         <div class="text2 reveal-animation">Timeless Motion</div>
     </div>
+    <!-- decoration -->
     <img class="decoration-top" src="./source/decoration.png">
     <img class="decoration-bottom" src="./source/decoration.png">
 </div>
 <a href="#" class="load-more-link"><div class="load-more-button">Load More</div></a>
 
+<!-- popup video and image slide section -->
 <div id="popup-background" onclick="closePopupVideo(); closePopupSlide();"></div>
 <div id="player"></div>
 
@@ -140,6 +151,7 @@
 <i class="fas fa-caret-right" onclick="showNextImg(1)"></i>
 <i class="fas fa-caret-left" onclick="showNextImg(-1)"></i>
 
+<!-- about us section -->
 <h1 id="about-us-section" class="reveal-animation">About Us</h1>
 <div class="about-us">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id arcu iaculis, rutrum nunc ac, pellentesque risus. Vivamus hendrerit ligula nisl, at venenatis mi cursus et. Sed vitae ante quis tellus iaculis placerat quis nec urna. Morbi eget metus in odio cursus faucibus. Praesent metus diam, finibus eget turpis in, cursus accumsan eros. Morbi euismod metus arcu, quis venenatis massa ultrices eu. In sagittis consequat lectus ac venenatis. Praesent in ipsum ut libero lacinia eleifend. Nunc vitae porttitor ante, ut vehicula velit. In varius massa ut scelerisque commodo.</p>
@@ -147,6 +159,7 @@
     <a href="#"><div class="contact-us-button">Contact Us</div></a>
 </div>
 
+<!-- the team section -->
 <div class="the-team">
     <img class="filter" src="./source/filter.png">
     <h1 id="the-team-section" class="reveal-animation">The Team</h1>
@@ -216,6 +229,7 @@
     <img class="decoration-bottom" src="./source/decoration.png">
 </div>
 
+<!-- blog section -->
 <h1 id="blog-section" class="reveal-animation">Blog</h1>
 <div class="blog">
     <a href="#">
@@ -262,10 +276,13 @@
     </a>
 </div>
 
+<!-- footer section -->
 <div class="footer">
+    <!-- animated background -->
     <div class="background background--particles">
         <canvas class="pg-canvas" width="1349" height="751" style="display: block;"></canvas>
     </div>
+
     <h1 id="contact-section">Contact</h1>
     <div class="our-address">
         <div class="tittle">Our Address</div>
@@ -278,6 +295,7 @@
         <a href="#"><i class="fab fa-facebook-f"></i><span><pre> </pre>we.are.scrape</span></a><br>
         <a href="#"><i class="fab fa-twitter"></i><span>scrape.agency</span></a>
     </div>
+
     <form class="contact-form">
         <div class="tittle">Contact Form</div>
         <div class="column" id="first-column">
@@ -293,13 +311,16 @@
         <input type="submit" value="Send A Message">
     </form>
     <hr>
+    <!-- decoration -->
     <img class="decoration-top" src="source\decoration.png">
     <div class="copyright">(C) Copyright 2017, All Rights Reserved</div>
 </div>
 
+<!-- for animated background in footer -->
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/jquery.particleground.min.js"></script>
 <script src="./js/custom.js"></script>
+<!-- real script -->
 <script src="./js/myScript.js"></script>
 
 </body>

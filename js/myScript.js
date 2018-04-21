@@ -1,3 +1,4 @@
+// controlling Youtube video
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -11,18 +12,21 @@ function onYouTubeIframeAPIReady() {
 	});
 }
 
+// popup video when click on image
 function popupVideo(){
 	document.getElementById('popup-background').style.visibility = 'visible';
 	document.getElementById('player').style.visibility = 'visible';
 	player.playVideo();
 }
 
+// close video
 function closePopupVideo(){
 	document.getElementById('popup-background').style.visibility = 'hidden';
 	document.getElementById('player').style.visibility = 'hidden';
 	player.stopVideo();
 }
 
+// for image slide
 var index;
 
 function showNextImg(count){
@@ -51,6 +55,7 @@ function closePopupSlide(){
 	document.getElementsByClassName('fa-caret-left')[0].style.visibility = 'hidden';
 }
 
+// get y-coordinate
 function getOffset(el){
 	el = el.getBoundingClientRect();
 	return {
@@ -59,11 +64,15 @@ function getOffset(el){
   	}
 }
 
+// when scrolling
 var activePart = 7;
 window.onscroll = function(){
+
+	// for menu background
 	if (window.pageYOffset != 0) document.getElementsByClassName('menu-background')[0].style.opacity = '0.9';
 	else document.getElementsByClassName('menu-background')[0].style.opacity = '0';
 
+	// for menu highlighting
 	var tmpActivePart = 7;
 	if (window.pageYOffset > 500) tmpActivePart = 6;
 	if (window.pageYOffset > 1000) tmpActivePart = 5;
@@ -77,6 +86,7 @@ window.onscroll = function(){
 		activePart = tmpActivePart;
 	}
 
+	// for revealing animation
 	var i;
     for (i=1; i<=30; i++){
     if (getOffset(document.getElementsByClassName('reveal-animation')[i-1]).top < window.pageYOffset + screen.height - 200)
