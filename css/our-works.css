@@ -37,10 +37,10 @@
 	transform: scale(1.1, 1.1);
 	filter: brightness(30%);
 }
-
+/*chang the top to make it look better*/
 .our-works i{
 	position: absolute;
-	top: 45%;
+	top: 55%;
 	left: 11%;
 	font-size: 37px;
 	color: white;
@@ -66,8 +66,7 @@
 	pointer-events: none;
 }
 
-.our-works .container:first-of-type .text1{ top: calc(65% - 50px); }
-.our-works .container:first-of-type .text2{ top: calc(70% - 50px); line-height: 50px;}
+/*get rid of because it was breaking the layout*/
 
 .load-more-link{
 	text-decoration: none;
