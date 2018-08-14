@@ -1,0 +1,78 @@
+.menu_hidden_c{
+	overflow: hidden;
+	position: fixed;
+	top: 35px;
+	right: 0;
+	width: 100%;
+	z-index: 9;
+	display: none;
+}
+
+.menu_hidden_c a, .menu_hidden_c div{
+	display: block;
+	color: rgb(180, 180, 180);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	transition: all 0.5s;
+}
+
+.menu_hidden_c a{
+	margin-left: 8%;
+}
+
+.menu_hidden_c div{
+	text-align: center;
+	margin-left: 53%;
+	border: 1px solid gray;
+	width: 4%;
+	cursor: pointer;
+}
+
+.menu_hidden_c div:hover{
+	border-color: orange;
+}
+
+.menu_background_big_c{
+	height: 85vh !important;
+	opacity: 0.9 !important;
+}
+@media screen and (max-width: 500px) {
+	.menu_hidden_c{
+		display: block;
+	}
+	
+	.menu_hidden_c a{
+		font-size: 3.5vw;
+		padding: 1.5%;
+	}
+	.menu_hidden_c div{
+		font-size: 3.5vw;
+		padding: 1%;
+		margin-bottom: 3%;
+	}
+	.menu{
+		display: none;
+	}
+	.menu-background{
+		height: 20vh;
+	}
+	.header-img{
+		transform: scaleX(2);
+		height: 95vh;	
+	}
+	.header-intro{
+		font-size: 10vw;
+	}
+	@keyframes appear{
+    0% {font-size: 0;}
+    0.0001% {font-size: 10.3vw;}
+    1% {font-size: 9.3vw;}
+    2% {font-size: 10.3vw;}
+    3% {font-size: 10.1vw;}
+    5% {font-size: 10.3vw;}
+    33.3% {font-size: 10.3vw;}
+    33.3001% {font-size: 0;}
+}
+
+}
