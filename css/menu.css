@@ -18,7 +18,7 @@
 .menu{
  	overflow: hidden;
 	position: fixed;
-	top: 35px;
+	top: 32px;
 	right: 120px;
 	width: 100%;
 	z-index: 9;
